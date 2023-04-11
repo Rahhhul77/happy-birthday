@@ -1,4 +1,10 @@
 // Import the data to customize and insert them into page
+
+$('#play').click(function(){
+		var audio = $('.song')[0];
+        audio.play();
+
+
 const fetchData = () => {
   fetch("customize.json")
     .then(data => data.json())
